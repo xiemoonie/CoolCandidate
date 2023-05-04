@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:background="#EFDDFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Form"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#555353"
+            android:fontFamily="@font/orbitron"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_contact_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                tools:text="Name Example"
+                android:id="@+id/name_text"
+                android:textColor="#555353"
+                android:backgroundTint="#E8CEFF"
+                android:fontFamily="@font/orbitron"
+                android:layout_marginBottom="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_contact_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="0000-0000"
+                android:inputType="phone"
+                android:id="@+id/phone_text"
+                android:textColor="#555353"
+                android:backgroundTint="#E8CEFF"
+                android:fontFamily="@font/orbitron"
+                android:layout_marginBottom="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_my_displayed_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:text="Moonie"
+                android:id="@+id/displayName_text"
+                android:textColor="#555353"
+                android:backgroundTint="#E8CEFF"
+                android:fontFamily="@font/orbitron"
+                android:layout_marginBottom="20dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <CheckBox
+            android:id="@+id/checkbox_junior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Include junior"
+            android:textColor="#555353"
+            android:fontFamily="@font/orbitron"></CheckBox>
+
+        <Spinner
+            android:id="@+id/spinner_jobtittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:listitem="@android:layout/simple_list_item_1"
+            android:textColor="#555353"
+            android:fontFamily="@font/orbitron"
+            android:background="#638869BD">
+
+        </Spinner>
+
+        <CheckBox
+            android:id="@+id/immediateStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/text_immediate_start"
+            android:textColor="#555353"
+            android:fontFamily="@font/orbitron"></CheckBox>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Avaliable from date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/text_25_01_2023"
+                android:inputType="date"
+                android:id="@+id/date_text"
+                android:textColor="#555353"
+                android:backgroundTint="#E8CEFF"
+                android:fontFamily="@font/orbitron"
+                android:layout_marginBottom="20dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:fontFamily="@font/orbitron"
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/button_preview_message"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#BC9A9EFF">
+
+        </Button>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

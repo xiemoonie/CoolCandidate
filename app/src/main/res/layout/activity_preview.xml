@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFDDFF"
+    android:orientation="vertical"
+    tools:context=".PreviewActivity">
+<androidx.cardview.widget.CardView
+    android:backgroundTint="#E8CEFF"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="40dp"
+    >
+    <TextView
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:textColor="#7E7D7D"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:fontFamily="@font/orbitron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="This will be the text in case it will be long"
+        android:id="@+id/message_view">
+
+    </TextView>
+</androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/send_Button"
+        android:fontFamily="@font/orbitron"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:backgroundTint="#BC9A9EFF"
+        >
+
+    </Button>
+
+</LinearLayout>

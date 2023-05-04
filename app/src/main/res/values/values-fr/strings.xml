@@ -1,0 +1,8 @@
+<resources>
+	<string name="hint_contact_name">Nom du contact</string>
+	<string name="hint_contact_number">Numero de contact</string>
+	<string name="hint_my_displayed_name">Mon nom affiché</string>
+    <string name="text_immediate_start">Démarrage immédiat</string>
+    <string name="button_preview_message">Aperçu du message</string>
+    <string name="text_25_01_2023">25/01/2023</string>
+</resources>

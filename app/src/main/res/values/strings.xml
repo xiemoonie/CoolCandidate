@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">cool_candidate</string>
+    <string name="hint_contact_name">Contact Name</string>
+    <string name="hint_contact_number">Contact Number</string>
+    <string name="hint_my_displayed_name">My displayed name</string>
+    <string name="text_immediate_start">Immediate start</string>
+    <string name="button_preview_message">Preview Message</string>
+    <string name="text_25_01_2023">25/01/2023</string>
+</resources>
